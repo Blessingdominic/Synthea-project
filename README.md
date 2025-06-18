@@ -15,7 +15,8 @@ cd synthea
 ## Changing the default properties
 I used CSV as my data format of choice. This required adjusting the file in VS Code.
 First, I searched for Synthea in File Explorer and then followed the path `src/main/resources/synthea.properties` to edit the properties file.
-**Search for this line:**\
+
+**Search for this line:**
 ```
 exporter.csv.export = false
 ```
