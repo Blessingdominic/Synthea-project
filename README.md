@@ -12,3 +12,15 @@ git clone https://github.com/synthetichealth/synthea.git
 cd synthea
 ./gradlew build check test
 ```
+## Changing the default properties
+I used CSV as my data format of choice. This required adjusting the file in VS Code.
+First, I searched for Synthea in File Explorer and then followed the path `src/main/resources/synthea.properties` to edit the properties file.
+**Search for this line:**
+```
+exporter.csv.export = false
+```
+**Change it to:**
+```
+exporter.csv.export = true
+```
+This ensures Synthea will generate data in `/output/csv/` each time you run it.
